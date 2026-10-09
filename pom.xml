@@ -11,12 +11,14 @@
         <exec.mainClass>sv.edu.ues.occ.ingenieria.ppi115_2026.salud.galenoclient.GalenoClient</exec.mainClass>
     </properties>
     <dependencies>
+        <!-- JPA -->
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>org.eclipse.persistence.jpa</artifactId>
             <version>5.0.2</version>
             <scope>compile</scope>
         </dependency>
+        <!-- BeanValidation -->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -24,11 +26,42 @@
             <scope>compile</scope>
             
         </dependency>
+        <!-- JassonBN -->
         <dependency>
             <groupId>org.eclipse.yasson</groupId>
             <artifactId>yasson</artifactId>
             <version>3.0.5</version>
             <scope>compile</scope>
+        </dependency>
+        <!-- Junit -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.12.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- jersyClient -->
+        <dependency>
+            
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>4.0.0</version>
+            <scope>compile</scope>
+            
+        </dependency>
+        <!-- Inyección de dependencias que Jersey necesita para arrancar  -->
+<dependency>
+    <groupId>org.glassfish.jersey.inject</groupId>
+    <artifactId>jersey-hk2</artifactId>
+    <version>4.0.0</version>
+    <scope>compile</scope>
+</dependency>
+       
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-binding</artifactId>
+            <version>4.0.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

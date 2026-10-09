@@ -101,7 +101,7 @@ private List<Documento> documentoList;
     public void setActivo(Boolean activo) {
         this.activo = activo;
     }
-
+@JsonbTransient
     public Collection<Documento> getDocumentoCollection() {
         return documentoCollection;
     }
